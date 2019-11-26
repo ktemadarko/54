@@ -1,0 +1,33 @@
+Data on individual trees taken on plots along transects in a few
+sections of a valley in washington state where trees were encroaching
+into shrubsteppe habitat
+
+Area : the area in the valley
+Transect: the transect number
+Plot_Dist: distance along the transect (taken every 25 meters, when
+trees were present)
+Slope : the slope of the plot
+Aspect : the aspect that the plot faced
+Profile : whether the shape of the plot was concave, convex, or planar
+TreeNum : number of the tree within the plot
+Species : species of tree (PSME=pseudostuga menziesii, PIPO=Pinus
+ponderosa, LAOC=Larix occidentalis)
+Status : Live or Dead
+DBH : Diameter at Breast Height (cm)
+Height : Tree height (m)
+Age : Age of tree (years). taken only for the largest (presumably
+oldest) tree of each species on each plot. Maybe also smallest? I
+forget
+Basal_Area_m2: cross sectional area of the tree at breast height. used
+to assess total cover of trees on the plot
+
+Aspect: replaced 0* with 0
+Profile: replaced "plam" with "plan"
+Status: replaced D with Dead, L with Live, S with Stump
+Age: removed all ybh
+
+Inserted all NA
+Removed all ~
+Replaced all N/A with NA
+Replaced #VALUE! with NA
+Some other minor corrections

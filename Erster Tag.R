@@ -103,6 +103,21 @@ subGF<-ex1[ex1$GF=="T",]
 str(subGF)
 str(ex1[ex1$GF=="T",])
 
+#nitrogen====
+subT<-ex1[ex1$Nmass>1.5,]
+
+str(subT)
+summary(subT)
+#443 species have a Nmass > 1.5%
+#ex1plot----
+
+explot1<-plot(ex1$Nmass)
+#plot ex1$Nmass why I do not need to specific x and y
+
+#explot2----
+explot2<-plot(ex1$Nmass,col=ifelse(ex1$Nmass>1.5,"red","blue"))
+
+explot3<-plot(ex1$Nmass,col=ifelse(ex1$GF=="T","red","green"))
 #a1<-aggregate(subGF,)
 
 #Ex3----
@@ -113,6 +128,10 @@ str(t1)
 df3<-as.data.frame(t1)
 
 colnames(df3)[1]="Brood_ID"
+
+#wing_length====
+summary(wb$Wing)
+
 
 barplot(df3$Freq, ylim=c(0,14), ylab= "Frequency",
          xlab= "Brood_ID", main = "A bargraph showing the frequency of different Brood IDS", 
